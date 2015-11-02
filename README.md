@@ -33,6 +33,10 @@ adite/base
 /etc/apache2/sites-enabled
 ```
    
+## Apache Home Directory
+```shell
+/var/www/html
+```
 
 ## USAGE
 ---
