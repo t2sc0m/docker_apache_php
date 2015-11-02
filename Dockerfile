@@ -35,5 +35,9 @@ ADD php.ini /etc/php5/mods-available/overrides.ini
 # Enable php modules
 RUN php5enmod apcu curl gd mcrypt mongo mysql intl json xsl overrides/99
 
+VOLUME ["/var/www"]
+VOLUME ["/etc/apache2/sites-enabled"]
+
 EXPOSE 80
+
 CMD ["/usr/sbin/apache2ctl", "-D", " FOREGROUND"]
