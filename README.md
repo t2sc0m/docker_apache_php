@@ -43,7 +43,8 @@ $ sudo docker run -p ${your_port}:80 -v ${your_share_directory}:/var/www adite/a
 ---
 ### Start with custom configuration
 ```shell
-$ sudo docker run -p ${your_port}:80 -v ${your_vhost_conf_directory}:/etc/apache2/sites-enabled \
+$ sudo docker run -p ${your_port}:80 \
+                  -v ${your_vhost_conf_directory}:/etc/apache2/sites-enabled \
                   -v ${your_share_directory}:/var/www adite/apache_php
 ```
 ---
